@@ -2,8 +2,7 @@
 const { OpenAI } = require('openai')
 const express = require('express');
 const cors = require('cors');
-const { AbortController } = require('node-abort-controller');
-global.AbortController = AbortController;
+
  require('dotenv').config();
 const connectDB = require('./DB/connect')
 const postRoutes = require('./Routes/postRoute')
